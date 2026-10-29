@@ -1,0 +1,20 @@
+# Exact versions used for all Stage 1-4 scripts (scripts/01 through scripts/09).
+# Verified working together in this project's conda environment (WSL Ubuntu,
+# CUDA 12.6, NVIDIA RTX 3060 Ti) as of 2026-08-26.
+#
+# Install with: pip install -r requirements.txt
+# (PyTorch's CUDA build should be installed per https://pytorch.org/get-started/locally/
+# for your specific CUDA version before installing the rest of this file.)
+
+torch==2.12.1
+torchvision==0.27.1
+torch-geometric==2.8.0.post1
+numpy==2.5.0
+pandas==3.0.3
+pyarrow==25.0.1
+scikit-learn==1.9.0
+scipy==1.18.0
+networkx==3.6.1
+xgboost==3.3.0
+mapie==1.5.0  # installed but not used in the core pipeline -- see Model_Architecture_Specification.docx
+              # Section 1/5 for why conformal prediction is hand-implemented instead
